@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical Documentation</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
 </head>
 <body>
@@ -25,14 +27,17 @@
             <header>Introduction</header>
             <p>C# is a programming language developed by Microsoft.</p>
             <p>C# is used in many fields , Some of them are:-</p>
-            <ol>
+            <ol id="c1" class="position-relative">
+                <button onclick="copy(this)" class="border-0 bg-transparent Copy-btn"><i class="fa-solid fa-copy"></i></button>
+               
                 <li>Desktop App Development</li>
                 <li>Mobile App Development</li>
                 <li>Game Development</li>
                 <li>Backend Web Development</li>
             </ol>
             <p>C# is one of the most popular programming languages , Because:-</p>
-            <ul>
+            <ul id="c2" class="position-relative">
+                <button onclick="copy(this)" class="border-0 bg-transparent Copy-btn"><i class="fa-solid fa-copy"></i></button>
                 <li>It is a programming language developed by Microsoft</li>
                 <li>It is a high-level programming language which is easy to learn</li>
                 <li>It is more secure than many programming languages</li>
@@ -43,7 +48,7 @@
         <section class="main-section" id="Syntax">
             <header>Syntax</header>
             <p>Syntax is the structure of statements , Here is a simple program typed in C# to discuss the meaning of syntax</p>
-            <pre><code>using System;
+            <pre id="c3" class="position-relative"><button onclick="copy(this)" class="border-0 bg-transparent Copy-btn"><i class="fa-solid fa-copy text-white"></i></button><code>using System;
 namespace Hello
 {
     class MyProgram
@@ -65,7 +70,8 @@ namespace Hello
         <section class="main-section" id="Data_Types">
             <header>Data Types</header>
             <p>Some data types that are supported by C# :-</p>
-            <ol>
+            <ol id="c4" class="position-relative">
+                <button onclick="copy(this)" class="border-0 bg-transparent Copy-btn"><i class="fa-solid fa-copy "></i></button>
                 <li>integer (int) ... 1 , 500 , -200</li>
                 <li>double (double) ... 0.5 , 3.14 , -2.5</li>
                 <li>string (string) ... "AAA" , "What is your name ?"</li>
@@ -78,9 +84,9 @@ namespace Hello
             <header>Variables</header>
             <p>Variables are containers for storing data values.</p>
             <p>The syntax for declaring a variable and assigning a value to it is as following :</p>
-            <pre><code>data-type variable-name = value(data) ;</code></pre>
+            <pre ><code>data-type variable-name = value(data) ;</code></pre>
             <p>For example :-</p>
-            <pre><code>int age = 20 ;
+            <pre id="c5" class="position-relative"><button onclick="copy(this)" class="border-0 bg-transparent Copy-btn"><i class="fa-solid fa-copy text-white"></i></button><code>int age = 20 ;
 string FirstName = "AAA" ;
 string full_name = "AAA BBB" ;
 double _degree = 80.5 ;
@@ -95,7 +101,7 @@ bool male = true ;</code></pre>
             <p>Syntax for type casting is :-</p>
             <pre><code>(data-type) data</code></pre>
             <p>For example :-</p>
-            <pre><code>double pi = 3.14 ;
+            <pre id="c6" class="position-relative"><button onclick="copy(this)" class="border-0 bg-transparent Copy-btn"><i class="fa-solid fa-copy text-white"></i></button><code>double pi = 3.14 ;
 int myInt = (int) pi ;
 Console.WriteLine(pi) ; // 3.14
 Console.WriteLine(myInt) ; // 3</code></pre>
@@ -105,9 +111,9 @@ Console.WriteLine(myInt) ; // 3</code></pre>
             <header>User Input</header>
             <p>You already know that Console.WriteLine() is used to output text.</p>
             <p>Now you are going to learn how to use Console.ReadLine() to get user input.</p>
-            <pre><code>Console.ReadLine();</code></pre>
+            <pre ><code>Console.ReadLine();</code></pre>
             <p>For example :-</p>
-            <pre><code>int age ;
+            <pre id="c7" class="position-relative"><button onclick="copy(this)" class="border-0 bg-transparent Copy-btn"><i class="fa-solid fa-copy text-white"></i></button><code>int age ;
 Console.Write("Enter your age:") ;
 age = Console.ReadLine() ;
 Console.WriteLine("You are " + age + " years old") ;</code></pre>
@@ -116,10 +122,12 @@ Console.WriteLine("You are " + age + " years old") ;</code></pre>
         <section class="main-section" id="Booleans">
             <header>Booleans</header>
             <p>Booleans are data types that can be used to control whether something is true or false(yes or no / on or off).</p>
-            <pre><code>bool male = true ;
+            <pre id="c8" class="position-relative"><button onclick="copy(this)" class="border-0 bg-transparent Copy-btn"><i class="fa-solid fa-copy text-white"></i></button><code>bool male = true ;
 bool student = true ;
 bool permission_accepted = false ;</code></pre>
         </section>
     </main>
+    
+    <script src="js/main.js"></script>
 </body>
 </html>
